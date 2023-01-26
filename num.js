@@ -1,8 +1,15 @@
-const num = a => {
-    if(a < 50){
-        for(let i =0; i= a - 1; i++){
-            console.log(i + a)
-        }
+const fibonacci = limiter =>{
+    let fib = []
+    let f1 = 0
+    let f2 = 1
+    fib.push(f1)
+    fib.push(f2)
+
+    for(let i= 0; i<limiter; i++){
+        fib.push(f1 + f2)
+        f3 = f1
+        f1 = f2
+        f2 = f3 + f2
     }
+    console.log(fib)
 }
-num(1)
