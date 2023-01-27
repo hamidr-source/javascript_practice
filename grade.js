@@ -3,6 +3,7 @@ const gradeList = [
     {name:"bahador", grade:20}
 ]
 const arrayToObject = gradeList.reduce((gradeObject, {name, grade}) =>{
-    return gradeObject = {name,grade};
+    gradeObject[name] = grade;
+    return gradeObject
 }, {});
 console.log(arrayToObject)
