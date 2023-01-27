@@ -1,4 +1,4 @@
-const fibonacci = n => {
+const fib = n => {
     if (n<2){
         return 1
     }
